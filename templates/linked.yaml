@@ -1,0 +1,2 @@
+path: {{ PATH }}
+include: ./.workon.yaml

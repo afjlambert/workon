@@ -1,0 +1,17 @@
+# git-config:
+#   merge-strategy: ..
+
+commands:
+  install:
+    - print Please add install-scripts to '.workon.yaml'
+    - exit 1
+  activate:
+    - cat ~/.git/description
+  run:
+    - print Please add run-scripts to '.workon.yaml'
+    - exit 1
+  test:
+    - echo Please add test-scripts to '.workon.yaml'
+    - exit 1
+  # exit:
+  #   - ...
