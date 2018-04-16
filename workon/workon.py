@@ -3,7 +3,7 @@
 import os
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-activate_this_file = os.path.join(dir_path, "env/bin/activate_this.py")
+activate_this_file = os.path.join(dir_path, "..", "env/bin/activate_this.py")
 execfile(activate_this_file, dict(__file__=activate_this_file))
 
 import sys
