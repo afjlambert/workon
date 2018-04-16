@@ -4,8 +4,7 @@ Project-management for your shell.
 
 Keywords: bash, shell, cli, pm, project management, navigation
 
-This tool is build for people who work on multilpe projects and
-wish to speed up their development workflow.
+This tool is build for people who work on multilpe projects and wish to speed up their development workflow.
 
 
 ## Install
