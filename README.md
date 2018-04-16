@@ -1,6 +1,6 @@
 # Workon
 
-Project-management for bash.
+Project-management for your shell.
 
 Keywords: bash, shell, cli, pm, project management, navigation
 
@@ -12,10 +12,11 @@ wish to speed up their development workflow.
 
 
 ```bash
-source workon
+source path/to/workon
 ```
 
-TODO:
+## TODO
+
 - cleanup
 - deactivate previous project before 'on'?
 - support custom names to prevent duplicate folder names
