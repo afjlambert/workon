@@ -1,0 +1,25 @@
+[tuintuin]
+git: https://github.com/afjlambert/lambert
+dir: ./
+environment:
+	db...
+
+dependencies:
+	- python3
+	- node@8
+
+presetup:
+	- nvm use
+	- npm i
+	- virtualenv env
+	- # fab importdata
+	- fab fixtures
+	- cp settings_local.dist ...
+
+setup: pip install -r requirements.txt
+activate: env/bin/activate
+run:
+	- fab runserver 5000
+	- ./trunk
+cleanup:
+	- build*/
