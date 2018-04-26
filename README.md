@@ -17,10 +17,10 @@ source path/to/workon
 ## TODO
 
 - cleanup
+- `work delete` prompt does not play nice with shell wrapper
 - deactivate previous project before 'on'?
 - support custom names to prevent duplicate folder names
   - support 'rename' command
-- Install via pip
 - make tests
 - Make install file using `curl`
 - bash-completion `workon [tab][tab]p[tab]` etc.
@@ -30,4 +30,12 @@ source path/to/workon
 
 ```bash
 workon --help
+```
+
+## Push to pypi
+
+```bash
+rm -rf dist
+python setup.py sdist bdist_wheel
+twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
 ```

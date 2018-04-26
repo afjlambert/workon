@@ -49,7 +49,7 @@ def cli():
 def list():
     """List ects."""
     for project in os.listdir(workon_home):
-        print project.replace(".yaml", "")
+        print(project.replace(".yaml", ""))
 
 @cli.command()
 def init():
@@ -59,7 +59,7 @@ def init():
         return sys.stderr.write("{} already exists.\n".format(local_file))
     else:
         print("Write local project yaml to '{}'".format(local_file))
-        template = os.path.join(dir_path, "templates", "project.yaml")
+        template = os.path.join(dir_path, "..", "templates", "project.yaml")
         copyfile(template, local_file)
     print("Done")
 

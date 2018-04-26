@@ -1,1 +1,4 @@
+workon2.egg-info/
+build/
+dist/
 env/
